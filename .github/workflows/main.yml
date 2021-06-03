@@ -12,4 +12,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          working_directory: e2e
+          working-directory: e2e
