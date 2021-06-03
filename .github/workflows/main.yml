@@ -1,6 +1,6 @@
 name: Cypress Test with yarn
 
-on: [push]
+on: [push,pull_request]
 
 jobs:
   # Basic Electron tests no dashboards
