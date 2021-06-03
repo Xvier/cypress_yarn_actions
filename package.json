@@ -1,0 +1,16 @@
+{
+  "name": "cypress_yarn_actions",
+  "version": "1.0.0",
+  "description": "Cypress with yarn and github actions",
+  "main": "index.js",
+  "repository": "git@github.com:Xvier/cypress_yarn_actions.git",
+  "author": "Xavier <xviuda@xebia.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "cypress open",
+    "test:ci": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^7.4.0"
+  }
+}

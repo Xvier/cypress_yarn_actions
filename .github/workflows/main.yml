@@ -1,0 +1,13 @@
+name: Cypress Test with yarn
+
+on: [push]
+
+jobs:
+  # Basic Electron tests no dashboards
+  cypress-basic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
