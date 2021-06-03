@@ -1,6 +1,6 @@
 name: Cypress Test with yarn
 
-on: [push,pull_request]
+on: [pull_request]
 
 jobs:
   # Basic Electron tests no dashboards
@@ -9,7 +9,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
